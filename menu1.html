@@ -1,4 +1,7 @@
-<!DOCTYPE html> <html>
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta ch
+<html>
 <head><title>방문 카운트 쿠키</title> <script>
 function GetCookie (name) { var str = name+"=";
 var pairs = document.cookie.split(";"); // 쿠키문자열을 ;을 경계로 분할 for(var i=0; i<pairs.length; i++) {
@@ -16,7 +19,7 @@ var count = GetCookie("count");
 var expire = new Date (); // 현재 시간 if (username == null) {
 count = 0;
 username = prompt("이름을 입력해 주십시오.",""); if (username == null) {
-alert("이름을 입력하시면 보다 나은 서비스를 제공받을 수 있습니다."); username = "아무개“;
+alert("이름을 입력하시면 보다 나은 서비스를 제공받을 수 있습니다."); username = "아무개";
 } else {
 expire.setTime(expire.getTime() + (365 * 24 * 3600 * 1000)); // 1년후 SetCookie("username",username,expire);
 }
